@@ -27,7 +27,13 @@ public class Desafio03 extends AppCompatActivity {
         int n1 = rand.nextInt(6);
         String respToast= "";
         if(n1 == n2){
-
+            respToast = "Empate";
+        }
+        if(n1 < n2){
+            respToast = "Jogador N°1 Venceu";
+        }
+        if(n1 > n2){
+            respToast = "Jogador N°2 Venceu";
         }
 
         switch ( n1 + 1 ) {
